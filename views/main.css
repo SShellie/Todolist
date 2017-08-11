@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  height: 800px;
+	background-color: #9be9f7;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background-size: cover;
+  padding-left: 30px;
+}
+
+.circle:hover {
+  border-radius:50%;
+}
+
+.copyRight {
+  font-family: cursive;
+  padding-left: 380px;
+  margin-bottom: 50px;
+  /*-webkit-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  transform: scale(1.8);
+  position: relative;*/
+}

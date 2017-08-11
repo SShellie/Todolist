@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Your To Do List</h1>
+    <form action="/" method="post">
+      <input type ="text" value="" placeholder="Enter Task" name="todo"><button class="circle" type="submit">Submit</button>
+    </form>
+      <h2>Activities</h2>
+        {{#todos}}
+        <form action ="/complete" method="post">
+          {{^done}}
+              <button class="circle" type="submit" name="clicked" value="{{task}}">Complete Task</button><span>{{task}}</span><br>
+          {{/done}}
+        </form>
+        {{/todos}}
+      <h2>Completed</h2>
+        {{#todos}}
+          {{#done}}
+              <del>{{task}}</del><br>
+          {{/done}}
+        {{/todos}}
+      </body>
+
+    <div class="copyRight"> <p>Created by &copy; Sean Shellie</p> </div>
+</html>
